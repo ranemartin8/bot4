@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranemartin8/bot4.git"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +17,17 @@
     "discord.js": "^11.0.0",
     "discord.js-commando": "^0.9.0",
     "request": "^2.81.0",
-    "request-promise": "^4.2.0"
+    "request-promise": "^4.2.0",
+    "cheerio": "^0.22.0",
+    "moment": "^2.18.1",
+    "sequelize": "^3.30.4",
+    "snekfetch": "^3.1.7",
+    "querystring":"^0.2.0",
+    "sherlockjs":"^0.0.9 "
+      
+  },
+    "engines": {
+    "node": "7.9.0"
   }
+    
 }
