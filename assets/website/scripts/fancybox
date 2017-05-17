@@ -1,0 +1,41 @@
+<a class="fb3" data-fancybox="season4" href="/images/aq/aq_mapcosts.jpg" data-caption="Alliance Quest  |  Map Costs">
+  	
+  	<img src="/images/thumbs/aq-map5-full-cc-links-oppn.jpg" alt="" /></a>
+
+<a class="fb3" data-fancybox="season4" href="/images/aq/aq-map5-section1.jpg" data-caption="Alliance Quest  |  Map 5 -  Section 1">
+  	
+  	<img src="/images/thumbs/aq-map5-section1.jpg" /></a>
+
+<a class="fb3" data-fancybox="season4" href="/images/aq/aq-map5-section2.jpg" data-caption="Alliance Quest  |  Map 5 -  Section 2">
+ 	
+  	<img src="/images/thumbs/aq-map5-section2.jpg" /></a>
+
+<a class="fb3" data-fancybox="season4" href="/images/aq/aq-map5-section3.jpg" data-caption="Alliance Quest  |  Map 5 -  Section 2">
+ 	
+  	<img src="/images/thumbs/aq-map5-section3.jpg" /></a>
+	
+<script type="text/javascript">
+$('[data-fancybox="map5"]').fancybox({
+	speed : 100,
+	loop : true,
+	opacity : 80,
+	gutter : 30,
+	margin : [44, 0],
+
+// Should display toolbars
+	infobar : true,
+	buttons : true,
+
+
+	// What buttons should appear in the toolbar
+        slideShow  : false,
+	fullScreen : false,
+	thumbs     : true,
+	closeBtn   : true,
+
+	// Should apply small close button at top right corner of the content
+	// If 'auto' - will be set for content having type 'html', 'inline' or 'ajax'
+	smallBtn : true,
+
+	});
+</script>
