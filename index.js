@@ -35,7 +35,7 @@ bot
 bot.registry.registerGroups([
 	['champpi','Champ Information'],
 	['tools','Alliance Tools'],
-    ['content','MCOC Content']
+    ['content','MCOC Content'],
    ['tags','Custom Command Tags']
 
 	]);
