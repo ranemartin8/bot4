@@ -1,5 +1,5 @@
 //const config = require(__dirname + "/config.json");
-const { commando, SQLiteProvider } = require('discord.js-commando');
+const commando = require('discord.js-commando');
 const sqlite = require('sqlite');
 
 const bot = new commando.Client({
@@ -36,7 +36,7 @@ bot.registry.registerGroups([
 	['champpi','Champ Information'],
 	['tools','Alliance Tools'],
     ['content','MCOC Content']
-   // ['config','Configuations']
+   ['tags','Custom Command Tags']
 
 	]);
 bot.registry.registerDefaults();
