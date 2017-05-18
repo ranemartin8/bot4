@@ -29,7 +29,7 @@ class tagCommand extends commando.Command {
         let nameLower = name.toLowerCase();
 
         sql.get(`SELECT * FROM serverTags WHERE guildID = ${message.member.guild.id} AND name = '${nameLower}'`).then(row => {
-            if (!row) return message.channel.send(':x: That tag or name could not be found. Do better next time. Reply .list for a list of commands')
+            if (!row) return message.channel.send(':x: That tag or name could not be found. Hey. Do better next time. Reply !taglist for a list of available commands')
 
             message.channel.send(`${row.tag}`)
         })

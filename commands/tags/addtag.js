@@ -46,7 +46,7 @@ class addTagCommand extends commando.Command {
                 sql.run('INSERT INTO serverTags (guildID, name, tag, user) VALUES (?, ?, ?, ?)', [guildID, nameLower, tag, userName])
             })
         })
-        message.channel.send(':floppy_disk: Command saved! Hey, good for you!')
+        message.channel.send(':floppy_disk: Tag command saved! Hey, good for you!')
     }
 }
 
