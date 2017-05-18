@@ -21,7 +21,7 @@ class listCommand extends commando.Command {
   }
   async run(message) {
      let data = await sql.all(`SELECT name FROM serverTags WHERE guildID = ${message.member.guild.id}`)
-     var result = 'tag' + data.map(a => a.name).join('\n ')
+     var result = data.map(a => a.name).join('\n ')
 
      if (!result) return message.channel.send(`${message.member.guild.name} does not currently have any tags.`)
      message.channel.send(`**Available Tag Commands:** (!t <command>)\n ${result}`)
