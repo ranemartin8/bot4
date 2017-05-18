@@ -1,16 +1,21 @@
-const commando = require('discord.js-commando');
+const config = require(__dirname + "/config.json");
+const { commando, SQLiteProvider } = require('discord.js-commando');
+const sqlite = require('sqlite');
+
 const bot = new commando.Client({
-    commandPrefix: '!',
-    owner: '308388415064506369',
+    commandPrefix: config.prefix,
+    owner: config.ownerID,
     disableEveryone: true,
     unknownCommandResponse: false
 });
 
-//.on('ready', () => {
- // console.log('I am ready!');
-//});
 
-//const guildSettings = require('./dataProviders/postgreSQL/models/GuildSettings');
+sqlite.open(__dirname + "/store.sqlite3").then((db) => {
+    bot.setProvider(new commando.SQLiteProvider(db));
+}).catch(console.error);
+
+sqlite.open(__dirname + "/guildInfo.sqlite3").catch(console.error);
+
 
 bot
 .on('error', console.error)
@@ -23,8 +28,9 @@ bot
 	.on('reconnect', () => { console.warn('Reconnecting...'); })
 	.on('commandError', (cmd, err) => {
 		if(err instanceof commando.FriendlyError) return;
-		console.error('Error in command ${cmd.groupID}:${cmd.memberName}', err);
+		console.error('Error', err);
 	});
+
 
 bot.registry.registerGroups([
 	['champpi','Champ Information'],
@@ -48,4 +54,4 @@ bot.on('message',(message) =>{
 
 });
 
-bot.login('MzA4Mzg4NDE1MDY0NTA2MzY5.C-gIpA.lgy8fQIepTrUu-BB7pz-zcJax7U');
+bot.login(config.token);
