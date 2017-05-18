@@ -1,10 +1,10 @@
-const config = require(__dirname + "/config.json");
+//const config = require(__dirname + "/config.json");
 const { commando, SQLiteProvider } = require('discord.js-commando');
 const sqlite = require('sqlite');
 
 const bot = new commando.Client({
-    commandPrefix: config.prefix,
-    owner: config.ownerID,
+    commandPrefix: '!',
+    owner: '308388415064506369',
     disableEveryone: true,
     unknownCommandResponse: false
 });
@@ -54,4 +54,4 @@ bot.on('message',(message) =>{
 
 });
 
-bot.login(config.token);
+bot.login('MzA4Mzg4NDE1MDY0NTA2MzY5.C-gIpA.lgy8fQIepTrUu-BB7pz-zcJax7U');
