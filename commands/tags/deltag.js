@@ -26,7 +26,7 @@ class delTagCommand extends commando.Command {
         let nameLower = name.toLowerCase()
 
         sql.get(`DELETE FROM serverTags WHERE guildID = ${message.member.guild.id} AND name = '${nameLower}'`).then(row => {
-            if (!row) return message.channel.send(':skull_crossbones: Tag command removed. It's gone. You killed it. You *monster!* ')
+            if (!row) return message.channel.send(':skull_crossbones: Tag command removed. Dead. Gone. You killed it. You *monster!* ')
 
         })
     }
