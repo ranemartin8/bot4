@@ -1,7 +1,5 @@
 # mmmBOT!
-mmmBOT! is a work-in-progress Discord bot for my Marvel Contest of Champions alliance. It was build using Node.js, Discord.js and Discord.js-Commando.
-
-Alliance Page: http://assgardians.com
+mmmBOT! is a work-in-progress Discord bot for my Marvel Contest of Champions alliance, the Assgardians. It was build using Node.js, Discord.js and Discord.js-Commando.
 
 It includes some basic commands, plus many specific to MCOC gameplay. The MCOC commands pull for a Google Sheet "Database". This sheet was built from data pull from throughout the MCOC community, including:
 * https://github.com/gabriel-hook/contest-of-champions (Synergies, Specials)
@@ -12,6 +10,7 @@ It includes some basic commands, plus many specific to MCOC gameplay. The MCOC c
 
 I'll add an install link if I ever decide it's ready for public use.
 
+Assgardians Alliance: http://assgardians.com
 
 **MCOC Commands** 
 * Champion Info Look Up:
@@ -21,11 +20,11 @@ I'll add an install link if I ever decide it's ready for public use.
   * Synergy: Returns the incoming and outgoing synergies for a specific champ
 * Champion Search: Returns a list of champs based on search term (Search by ability, class & in-game tags)
 * Community Content: Quick commands that return links and images curated by MCOC community 
-** AQ Maps
-** AQ Schedule
-** Arena Cutoffs
-** Gameplay Guides
-** Etc.
+* AQ Maps
+  * AQ Schedule
+  * Arena Cutoffs
+  * Gameplay Guides
+  * Etc.
 
 
 **Basic Commands**
@@ -34,6 +33,5 @@ I'll add an install link if I ever decide it's ready for public use.
 * GIPHY Search
 * Google Search
 * Remind Me
-
 
 
