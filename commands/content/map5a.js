@@ -6,7 +6,7 @@ constructor(client) {
         super(client, {
             name: 'map5a',
             aliases: [
-                'map51'
+                'map51', 'm5a'
             ],
             group: 'content',
             memberName: 'map5a',
