@@ -4,7 +4,7 @@ const sqlite = require('sqlite');
 
 const bot = new commando.Client({
     commandPrefix: '!',
-    owner: '308388415064506369',
+    owner: 'CLIENT ID',
     disableEveryone: true,
     unknownCommandResponse: false
 });
@@ -54,4 +54,4 @@ bot.on('message',(message) =>{
 
 });
 
-bot.login('MzA4Mzg4NDE1MDY0NTA2MzY5.C-gIpA.lgy8fQIepTrUu-BB7pz-zcJax7U');
+bot.login('BOT TOKEN');
