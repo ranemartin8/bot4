@@ -15,7 +15,8 @@ class SeatinCommand extends commando.Command {
             args: [{
                 key: 'champName',
                 prompt: 'Which champion do you want the Seatin rank of?\n\n',
-                type: 'string'
+                type: 'string',
+                default: 'list'
             }]
         });   
     }
@@ -24,6 +25,9 @@ class SeatinCommand extends commando.Command {
 
 	async run(msg, args) {
 		const { champName } = args;
+
+            if(champName == 'list') return msg.say('https://docs.google.com/spreadsheets/d/1beR2CAlBQ2XBA3M1jJ1aPEfwE46eQt6LU-lzA0babxQ/edit#gid=0');
+
 
 		const response = await request({
 			method: 'GET',
